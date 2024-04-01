@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prince Chaudhary Portfolio's</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/e0dacb7cb5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e0dacb7cb5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="header">
@@ -14,10 +17,10 @@
           <img src="images/logo.png" class="logo" alt="logo" />
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#porfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
@@ -110,32 +113,125 @@
           <div>
             <i class="fa-solid fa-code"></i>
             <h2>Web Design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              delectus fuga expedita voluptates officiis repudiandae!</p>
-              <a href="#">learn more</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              delectus fuga expedita voluptates officiis repudiandae!
+            </p>
+            <a href="#">learn more</a>
           </div>
 
           <div>
             <i class="fa-solid fa-crop-simple"></i>
             <h2>UI/UX Design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              delectus fuga expedita voluptates officiis repudiandae!</p>
-              <a href="#">learn more</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              delectus fuga expedita voluptates officiis repudiandae!
+            </p>
+            <a href="#">learn more</a>
           </div>
 
           <div>
             <i class="fa-brands fa-app-store"></i>
             <h2>App Development</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              delectus fuga expedita voluptates officiis repudiandae!</p>
-              <a href="#">Learn more</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              delectus fuga expedita voluptates officiis repudiandae!
+            </p>
+            <a href="#">Learn more</a>
           </div>
-
-
         </div>
       </div>
     </div>
 
+    <!-- -----------------Portfolio--------------- -->
+    <div id="porfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/profile.png" alt="" />
+            <div class="layer">
+              <h3>Ecommerce App</h3>
+              <p>This app is Ecommerce where you can buy and sell products</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/profile.png" alt="" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                This app gives you Weather Information such as current
+                temperature, ressure,humidity and many more
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/profile.png" alt="" />
+            <div class="layer">
+              <h3>AI Chatting App</h3>
+              <p>This app works as ai like chatgpt made using gemini api</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ----------------------contact section-------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>prince1905tech@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+977 9819621905</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+            <!-- download cv -->
+            <a href="images/resume.pdf" download class="btn btn2">
+              Download CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2024, made by Prince Chaudhary</p>
+      </div>
+    </div>
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
