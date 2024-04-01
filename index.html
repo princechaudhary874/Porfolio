@@ -15,13 +15,16 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" class="logo" alt="logo" />
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#porfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          
         </nav>
         <div class="header-text">
           <p>UI/UX DESIGNER</p>
@@ -38,7 +41,7 @@
             <img src="images/profile.png" alt="About image" />
           </div>
           <div class="about-col-2">
-            <h1 class="subtitle">About Me</h1>
+            <h1 class="sub-title">About Me</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel
               sit architecto laboriosam doloremque sed nam sunt eos doloribus,
@@ -210,16 +213,22 @@
           </div>
 
           <div class="contact-right">
-            <form>
-              <input type="text" name="Name" placeholder="Your Name" required />
+            <form action="form_handler.php" method="post">
+              <input type="text" name="name" placeholder="Your Name" required />
               <input
                 type="email"
                 name="email"
                 placeholder="Your Email"
                 required
               />
+              <input
+              type="text"
+              name="number"
+              placeholder="Your Contact Number"
+              required
+            />
               <textarea
-                name="Message"
+                name="message"
                 rows="6"
                 placeholder="Enter your message"
               ></textarea>
@@ -245,6 +254,16 @@
         }
         event.currentTarget.classList.add("active-links");
         document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu=document.getElementById('sidemenu');
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
       }
     </script>
   </body>
